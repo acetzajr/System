@@ -7,7 +7,6 @@ file(GLOB_RECURSE system_INC "src/*.hpp")
 
 add_executable(system ${system_SRC} ${system_INC})
 
-# target_compile_options(system -Wall -Wextra -Wpedantic -Werror -Wfatal-errors)
 target_include_directories(system PRIVATE "src")
 
 set_property(TARGET system PROPERTY COMPILE_WARNING_AS_ERROR ON)
